@@ -1,0 +1,13 @@
+/*MEDIDAS PARA MOBILE */
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: $marron;
+  }
+}
+
+/*MEDIDAS PARA DESKTOP*/
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: $marron;
+  }
+}

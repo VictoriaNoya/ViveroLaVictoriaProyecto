@@ -1,0 +1,42 @@
+/*PAGINA INDEX*/ 
+/* Header */
+.index-header {
+  @extend %index-header
+}
+.header-Top {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.bg-body-tertiary{
+  position:static;
+  background-color:#e6e6e6;
+  border-radius: 2vh;
+  border: 0.5vh
+  solid #ef7c93; 
+  margin: auto; 
+justify-content: center;
+color: white;
+  font-family: 'Kadwa', serif !important
+  
+}
+.Iconos-header {
+  position:absolute;
+  top: 2vh;
+  right: 2vh;
+  display: flex;
+  gap: 1vh;
+  height: 5vh;
+}
+.portada{
+    width: 90%;
+  margin: 20px auto;
+  display: block;
+} 
+/*PAGINA CONTACTANOS*/
+
+/*HEADER*/
+.index-header-contacto{
+@extend %index-header
+}
+

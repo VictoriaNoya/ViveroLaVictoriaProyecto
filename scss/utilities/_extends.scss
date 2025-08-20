@@ -1,0 +1,13 @@
+%flexbasico {display:flex; 
+justify-content: center;
+}
+%index-header{
+     position: relative;
+    background-color: #8C7F6D;  
+  text-align: center;
+  padding: 20px;
+} 
+%flexcolumn {
+    display: flex;
+  flex-direction: column
+}

@@ -1,0 +1,114 @@
+/*PAGINA INDEX*/ 
+
+/* Main Esilos */
+.main-menu ul {
+  @extend %flexbasico;
+  flex-direction: row;
+  gap: 3vh;
+  list-style: none;
+  padding: 2vh;
+  margin: 5vh;
+  flex-wrap:wrap;
+}
+.main-menu a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 1vh 2vh;
+  border-radius: 25px;
+  border: 0.5vh
+  solid #ef7c93;
+  font-weight: bold;
+  line-height: 3vh;
+}
+.servicios {
+  @extend %flexbasico;
+  flex-wrap: wrap;
+  gap: 1vh;
+  background-color: #8C7F6D;
+  padding: 1vh;
+  
+}
+.servicio {
+@extend %flexbasico;
+  background-color: #ef7c93;
+  border-radius: 50%;
+  width: 30vh;
+  height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 2.2vh;
+}
+.servicio img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-bottom: 10px; 
+} 
+
+
+/*PAGINA CONTACTANOS*/
+/* Main */
+body {
+  background-color: #8C7F6D; 
+  font-family: 'kadwa', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-contacto {
+  max-width: 800px;
+  margin: 5vh auto;
+  padding: 5vh 4vh;
+  background-color: #8c7f6d;
+  color: white;
+}
+
+.form-contacto h2 {
+  text-align: center;
+  font-size: 4vh;
+  margin-bottom: 4vh;
+  color: white;
+}
+
+.formulario-contacto {
+  @extend %flexcolumn;
+  gap: 2.5vh;
+}
+
+.formulario-contacto label {
+  font-size: 3vh;
+  color: white;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 1.2vh;
+  font-size: 3vh;
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 2VH;
+}
+
+.boton-enviar {
+  text-align: right;
+}
+
+.boton-enviar button {
+  background-color: white;
+  border: 3px solid #f781bf;
+  color: #2f2f2f;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar button:hover {
+  background-color: #f781bf;
+  color: white;
+}

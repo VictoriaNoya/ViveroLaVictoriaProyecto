@@ -1,0 +1,279 @@
+
+@import "./utilities/extends"; 
+@import "./utilities/variables";
+@import "./utilities/mixins"; 
+@import "./layouts/header"; 
+@import "./layouts/main"; 
+@import "./layouts/footer"; 
+@import "./mq/mq"; 
+
+$blanco: white; 
+$marron: #8C7F6D;
+
+ /*EXTENDS*/ 
+%flexbasico {display:flex; 
+justify-content: center;
+}
+%index-header{
+     position: relative;
+    background-color: #8C7F6D;  
+  text-align: center;
+  padding: 20px;
+} 
+%flexcolumn {
+    display: flex;
+  flex-direction: column
+}
+body {
+  margin: 0;
+  font-family: "Kadwa", serif !important;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F5F2EF;
+}
+
+/*PAGINA INDEX*/
+
+/* Header */
+.index-header {
+  @extend %index-header
+}
+.header-Top {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.bg-body-tertiary{
+  position:static;
+  background-color:#e6e6e6;
+  border-radius: 2vh;
+  border: 0.5vh
+  solid #ef7c93; 
+  margin: auto; 
+justify-content: center;
+color: white;
+  font-family: 'Kadwa', serif !important
+  
+}
+.Iconos-header {
+  position:absolute;
+  top: 2vh;
+  right: 2vh;
+  display: flex;
+  gap: 1vh;
+  height: 5vh;
+}
+.portada{
+    width: 90%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Main Esilos */
+.main-menu ul {
+  @extend %flexbasico;
+  flex-direction: row;
+  gap: 3vh;
+  list-style: none;
+  padding: 2vh;
+  margin: 5vh;
+  flex-wrap:wrap;
+}
+.main-menu a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 1vh 2vh;
+  border-radius: 25px;
+  border: 0.5vh
+  solid #ef7c93;
+  font-weight: bold;
+  line-height: 3vh;
+}
+.servicios {
+  @extend %flexbasico;
+  flex-wrap: wrap;
+  gap: 1vh;
+  background-color: #8C7F6D;
+  padding: 1vh;
+  
+}
+.servicio {
+@extend %flexbasico;
+  background-color: #ef7c93;
+  border-radius: 50%;
+  width: 30vh;
+  height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 2.2vh;
+}
+.servicio img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+/* Footer */
+.footer {
+    @extend %flexcolumn;
+  background-color: #4c3b26;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 5vh 4vh;
+  gap: 4vh;
+}
+
+.footer-left {
+ @extend %flexcolumn;
+  align-items: center;
+  gap: 2vh;
+}
+
+.iconos-redes {
+ @extend %flexbasico;
+  column-gap: 1vh;
+  margin: 0;
+  padding: 0;
+}
+
+.iconos-redes img {
+  width: 20vh;
+  height: 20vh;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  display: block;
+  
+}
+.iconos-redes a {
+ @extend %flexbasico;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.boton-contacto {
+  background-color: white;
+  color: #8C7F6D;
+  text-decoration: none;
+  padding: 1.5vh 3vh;
+  border-radius: 3vh;
+  font-weight: bold;
+  font-size: 2.5vh;
+  border: 0.8vh solid #ef7c93;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.footer-right {
+  font-size: 2vh;
+  line-height: 3vh;
+  max-width: 80vh;
+}
+
+/*PAGINA CONTACTANOS*/
+
+/*HEADER*/
+.index-header-contacto{
+@extend %index-header
+}
+
+/* Main */
+body {
+  background-color: #8C7F6D; 
+  font-family: 'kadwa', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-contacto {
+  max-width: 800px;
+  margin: 5vh auto;
+  padding: 5vh 4vh;
+  background-color: #8c7f6d;
+  color: white;
+}
+
+.form-contacto h2 {
+  text-align: center;
+  font-size: 4vh;
+  margin-bottom: 4vh;
+  color: white;
+}
+
+.formulario-contacto {
+  @extend %flexcolumn;
+  gap: 2.5vh;
+}
+
+.formulario-contacto label {
+  font-size: 3vh;
+  color: white;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 1.2vh;
+  font-size: 3vh;
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 2VH;
+}
+
+.boton-enviar {
+  text-align: right;
+}
+
+.boton-enviar button {
+  background-color: white;
+  border: 3px solid #f781bf;
+  color: #2f2f2f;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar button:hover {
+  background-color: #f781bf;
+  color: white;
+}
+
+/*PAGINA PRODUCTOS*/ 
+
+body {
+  color: white;
+  font-family: 'Kadwa', serif !important
+}
+.productos-navbar {
+  background-color: #eaf5ea; 
+  position:static;
+  background-color:#e6e6e6;
+  border-radius: 2vh;
+  border: 0.5vh
+  solid #ef7c93; 
+  margin: auto; 
+justify-content: center;
+color: white;
+  font-family: 'Kadwa', serif !important
+}
+
+/*MEDIDAS PARA MOBILE */
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: $marron;
+  }
+}
+
+/*MEDIDAS PARA DESKTOP*/
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: $marron;
+  }
+}
